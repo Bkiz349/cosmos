@@ -1,0 +1,195 @@
+body {
+   color: var(--bs-white);
+   background-color: var(--bs-dark); 
+}
+
+a.btn:hover{
+   color: black;
+   transform: translateY(-5px);
+}
+
+.xl-text {
+   font-size: 85px;
+}
+
+header{
+   background: linear-gradient(128deg, rgba(63, 2, 71, 0.9), rgba(0, 0, 0, 0.9)),
+}
+
+.decoration-star{
+   bottom: -100px;
+   width: 2000px;
+   right: -300px;
+}
+
+.binance{
+   top: 400px;
+   left: 200px;
+   width: 150px;
+}
+
+.osmosis{
+   left:  0;
+   top: 150px;
+}
+
+.ethereum{
+   right: 120px;
+   top: 150px;
+   
+}
+
+.crypto{
+   right: 10px;
+   bottom: 70px;
+   width: 150px;
+}
+
+.thorchain{
+   right: 10px;
+   top: 50px;
+   width: 100px;
+}
+
+.sth:hover{
+   transform: scale(1.1);
+   cursor: pointer;
+}
+
+// logos
+
+.logo-scroll {
+   overflow: hidden;
+   white-space: nowrap;
+   box-sizing: border-box;
+   width: 100%;
+   padding: 50px 0;
+}
+
+.logo-track {
+   display: inline-block;
+   white-space: nowrap;
+   animation: scroll-left 15s linear infinite;
+}
+
+.logo-track img {
+   margin: 0 20px;
+   vertical-align: middle;
+}
+.logo-track img:hover{
+   cursor: pointer;
+}
+
+.logo-scroll:hover .logo-track  {
+   animation-play-state: paused;
+}
+
+@keyframes scroll-left {
+   0% {
+      transform: translateX(0);
+   }
+
+   100% {
+      transform: translateX(-50%);
+   }
+}
+
+// overflow
+body{
+   overflow-x: hidden;
+}
+
+.blockchain_img{
+   top: -200px;
+   left : 200px;
+}
+
+.sdk_background_1{
+   top: -400px;
+   width: 2000px;
+   left: -200px;
+   z-index: -1000;
+}
+
+.sdk_background{
+   top: -600px;
+   right: -500px;
+}
+.sdk_background_3 {
+   top: -300px;
+   right: -350px;
+   z-index: -10;
+}
+
+.sdk_background_4 {
+   top: 0px;
+   right: -350px;
+   z-index: -20;
+}
+.sdk_background_5 {
+   bottom: 200px;
+   right: -300px;
+   z-index: -40;
+}
+
+.smart_contract{
+   top: -200px;
+   left: -200px;
+   z-index: -10;
+}
+
+.smart_contract_1 {
+   top: -250px;
+   left: -200px;
+   z-index: -50;
+}
+
+.stack_background{
+   top: -120px;
+   left: 120px;
+   z-index: -200;
+}
+
+.building_background{
+   z-index: -20;
+}
+
+
+@media (max-width: 1200px) {
+
+   .new{
+      background: linear-gradient(128deg, rgba(63, 2, 71, 0.9), rgba(0, 0, 0, 0.9));
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      // text-align: center;
+   }
+
+   .xl-text{
+      font-size: 55px;
+   }
+
+   .navbar-brand, .navbar-toggler{
+      margin-top: 20px;
+   }
+
+   .blockchain_img {
+      display: none;
+   }
+
+   .news{
+      display: none;
+   }
+
+   .smart{
+      margin: 0;
+   }
+
+   .blockchn{
+      margin: 0;
+   }
+
+   
+}
+
