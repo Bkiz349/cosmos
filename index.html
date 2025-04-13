@@ -43,8 +43,7 @@
                      <p href="#resources" class="nav-link" id="resources">Resources</p>
                   </li>
                   <li class="nav-item fs-5">
-                     <p href="#contact" class="nav-link" id="contact" data-bs-toggle="popover"
-                     data-bs-content="Contact an Interchain Expert" data-bs-title="CONTACT">Contact </p>
+                     <p href="#contact" class="nav-link" id="contact">Contact </p>
                   </li>
                </ul>
            </div>
@@ -148,7 +147,7 @@
                         <img src="images/cosmos.svg" alt="" width="70px">
                      </div>
                      <div>
-                        <p class="fw-bold">Cosmos SDK</p>
+                        <p class="fw-bold">Cosmos SDK </p>
                         <p>Interchain standard for building appchains</p>
                      </div>
                   </div>
@@ -157,7 +156,7 @@
                         <img src="images/ibc.svg" alt="" width="70px">
                      </div>
                      <div>
-                        <p class="fw-bold">IBC Protocol</p>
+                        <p class="fw-bold">IBC Protocol <i class="fas fa-arrow-right"></i> </p>
                         <p>Interchain standard for building appchains</p>
                      </div>
                   </div>
@@ -166,7 +165,7 @@
                         <img src="images/comet.svg" alt="" width="70px" class="text-center">
                      </div>
                      <div>
-                        <p class="fw-bold">CometBFT</p>
+                        <p class="fw-bold">CometBFT <i class="fas fa-arrow-right"></i></p>
                         <p>Interchain standard for building appchains</p>
                      </div>
                   </div>
@@ -175,8 +174,8 @@
                         <img src="images/cosm.svg" alt="" width="70px">
                      </div>
                      <div>
-                        <p class="fw-bold">ComsJS</p>
-                        <p>Interchain standard for building appchains</p>
+                        <p class="fw-bold">ComsJS </p>
+                        <p>Interchain standard for building appchains </p>
                      </div>
                   </div>
                   <div class="d-flex flex-row justify-content-center align-items-start gap-4 py-2">
@@ -184,7 +183,7 @@
                         <img src="images/wasm.svg" alt="" width="70px">
                      </div>
                      <div>
-                        <p class="fw-bold">ComsWasm <i class="fas fa-arrow-left fa-white"></i></p>
+                        <p class="fw-bold">ComsWasm <i class="fas fa-arrow-right"></i></p>
                         <p>Interchain standard for building appchains</p>
                      </div>
                   </div>
@@ -194,7 +193,7 @@
                   <p class="pb-5">Customize your appchain from business logic to block production. 
                      Sovereignty means you control every aspect of consensus, governance, permissions, and smart contracts.
                   </p>
-                  <a href="#" class="btn bg-white btn-lg">Get Started with cosmos sdk</a>
+                  <a href="#" class="btn bg-white btn-lg">Get Started with cosmos sdk <i class="fas fa-arrow-right"></i></a>
                </div>
             </div>
             <!-- row -->
@@ -346,36 +345,82 @@
 
 
        <!-- stack -->
-        <section class="position-relative pb-8">
-            <img src="images/header_background.svg" alt="" class="stack_background position-absolute  d-none d-lg-block" width="1000px">
+         <section class="position-relative pb-8">
+            <img src="images/header_background.svg" alt="" class="stack_background position-absolute  d-none d-lg-block" width="800px">
             <div class="container position-relative z-100 ">
-               
                <div class="row">
                   <h1 class="display-5 fw-bold">The stack trusted by builders</h1>
-                  <div class="d-flex flex-row gap-5 p-5" >
-                     <h5><span class="badge rounded-0 bg-primary"></span> Celestia</h5>
-                     <h5><span class="badge rounded-0 bg-primary"></span> dYdX</h5>
-                     <h5><span class="badge rounded-0 bg-primary"></span> Pelumbra</h5>
+                  <!-- tab navigation -->
+                   <ul class="nav nav-pills mb-5 mt-3 gap-3" id="pills-tab" role="tablist">
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link active bg-secondary text-white" id="celestia-tab" data-bs-toggle="pill" data-bs-target="#celestia" type="button" role="tab">Celestia</button>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-secondary text-white" id="dydx-tab" data-bs-toggle="pill" data-bs-target="#dydx" type="button" role="tab">dYdX</button>
+                     </li>
+                     <li class="nav-item" role="presentation">
+                        <button class="nav-link bg-secondary text-white" id="penumbra-tab" data-bs-toggle="pill" data-bs-target="#penumbra" type="button" role="tab">Penumbra</button>
+                     </li>
+                  </ul>
+
+                  <div class="col-lg-10 offset-lg-1 bg-secondary text-white rounded-5 p-6 mb-3">
+    
+                     <!-- Tab Content -->
+                     <div class="tab-content" id="pills-tabContent">
+                        <!-- Celestia Tab -->
+                        <div class="tab-pane fade show active" id="celestia" role="tabpanel" aria-labelledby="celestia-tab">
+                           <div class="row align-items-center">
+                              <div class="col-md-6">
+                                 <blockquote class="blockquote">
+                                    <p>"The interchain stack served us well in rapidly iterating on the Celestia vision."</p>
+                                    <footer class="blockquote-footer text-white-50">Ismail Khoffi, Celestia</footer>
+                                 </blockquote>
+                              </div>
+                              <div class="col-md-4 ms-auto">
+                                 <img src="images/cosmos.svg" alt="Celestia logo" class="img-fluid">
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- dYdX Tab -->
+                        <div class="tab-pane fade" id="dydx" role="tabpanel" aria-labelledby="dydx-tab">
+                           <div class="row align-items-center">
+                              <div class="col-md-6">
+                                 <blockquote class="blockquote">
+                                    <p>"dYdX's privacy-preserving DeFi is built with modular architecture in mind."</p>
+                                    <footer class="blockquote-footer text-white-50">Henry de Valence, Penumbra</footer>
+                                 </blockquote>
+                              </div>
+                              <div class="col-md-4 ms-auto">
+                                 <img src="images/penumbra-logo.svg" alt="Penumbra logo" class="img-fluid">
+                              </div>
+                           </div>
+                        </div>
+
+                        <!-- Penumbra Tab -->
+                        <div class="tab-pane fade" id="penumbra" role="tabpanel" aria-labelledby="penumbra-tab">
+                           <div class="row align-items-center">
+                              <div class="col-md-6">
+                                 <blockquote class="blockquote">
+                                    <p>"Penumbra's privacy-preserving DeFi is built with modular architecture in mind."</p>
+                                    <footer class="blockquote-footer text-white-50">Henry de Valence, Penumbra</footer>
+                                 </blockquote>
+                              </div>
+                              <div class="col-md-4 ms-auto">
+                                 <img src="images/penumbra-logo.svg" alt="Penumbra logo" class="img-fluid">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
-               <div class="col-lg-12 bg-secondary text-white rounded-5 p-6 mb-3">
-                  <div class="row">
-                     <div class="col-md-6">
-                        <h3>"The fact that we can customize at the application level makes the general interchain thesis very attractive to us."</h3>
-                        <p class="pb-5">Darren Kong, Penumbra</p>
-                        <a href=""></a>
-                     </div>
-                     <div class="col-md-4  ms-auto">
-                        <img src="images/ethereum.svg" alt=""  >
-                     </div>
-                  </div>
-               </div>
+
             </div>
-        </section>
+         </section>
 
         <!-- community -->
          <section class="mt-6">
-            <div class="container">
+            <div class="container ">
                <div class="row">
                   <div class="col-md-8">
                      <h1 class="display-2 fw-bold pb-3">A fast-growing, global community</h1>
@@ -423,88 +468,125 @@
                      </div>
                   
                   </div>
-                  <div class="col-md-6"></div>
                </div>
             </div>
          </section>
 
+
          <!-- news -->
-          <section id="news" class="news m-7 mb-0">
-               <div id="news-carousel" class="carousel slide">
-                  <div class="carousel-inner">
-                     <!-- slide 1 -->
-                      <div class="carousel-item active">
-                        <div class="row bg-secondary p-6 ">
-                           <div class="col-lg-6">
-                              <h3 class="text center pb-5">IBC Eureka is Live: One Network, Infinite chains</h3>
-                              <p>
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda molestias saepe quae exercitationem
-                                  pariatur totam similique quasi suscipit, eveniet corrupti perspiciatis omnis iste facere placeat voluptates
-                                   sunt officiis. Iste a aliquam magni debitis, nam cumque illum placeat dignissimos eius provident et 
-                                   tempora quas? Cumque aut vitae facilis nisi molestias.
-                              </p>
-                              <a href="#" class="mt-4 bg-white btn btn-lg px-5">Read  <i class="fas fa-arrow-right"></i></a>
-                           </div>
-                           <div class="col-lg-6 my-auto">
-                              <img src="images/euraka.png" alt="" class="img-fluid rounded-2  ">
-                           </div>
-                           
+          <section id="news" class="news m-8 mb-0">
+            <div id="news-carousel" class="carousel" data-bs-ride="carousel">
+               <div class="carousel-inner" >
+                  <!-- Slide 1 -->
+                  <div class="carousel-item active">
+                  <div class="row bg-secondary p-5 flex-column-reverse flex-lg-row align-items-center text-center text-lg-start">
 
-                        </div>
-                      </div>
-                      <!-- slide 2 -->
-                       <div class="carousel-item active">
-                        <div class="row bg-secondary p-6 ">
-                           <div class="col-md-6">
-                              <h3 class="text center pb-5">IBC Eureka is Live: One Network, Infinite chains</h3>
-                              <p>
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda molestias saepe quae exercitationem
-                                  pariatur totam similique quasi suscipit, eveniet corrupti perspiciatis omnis iste facere placeat voluptates
-                                   sunt officiis. Iste a aliquam magni debitis, nam cumque illum placeat dignissimos eius provident et 
-                                   tempora quas? Cumque aut vitae facilis nisi molestias.
-                              </p>
-                              <a href="#" class="mt-4 bg-white btn btn-lg px-5">Read</a>
-                           </div>
-                           <div class="col-md-6 my-auto">
-                              <img src="images/euraka.png" alt="" class="img-fluid rounded-2  ">
-                           </div>
-                           
+                     <div class="col-lg-6">
+                        <h3 class="text-center pb-5">IBC Eureka is Live: One Network, Infinite chains</h3>
+                        <p class="text-white-50">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda molestias saepe quae exercitationem
+                        pariatur totam similique quasi suscipit, eveniet corrupti perspiciatis omnis iste facere placeat voluptates
+                        sunt officiis. Iste a aliquam magni debitis, nam cumque illum placeat dignissimos eius provident et
+                        tempora quas? Cumque aut vitae facilis nisi molestias.
+                        </p>
+                        <a href="#" class="mt-4 bg-white btn btn-lg px-5">Read ↗</a>
+                     </div>
+                     <div class="col-lg-6 my-auto">
+                        <img src="images/euraka.png" alt="Eureka" class="img-fluid rounded-2">
+                     </div>
+                  </div>
+                  </div>
 
-                        </div>
-                      </div>
-                      <!-- slide 3 -->
-                       <div class="carousel-item active">
-                        <div class="row bg-secondary p-6 ">
-                           <div class="col-md-6">
-                              <h3 class="text center pb-5">IBC Eureka is Live: One Network, Infinite chains</h3>
-                              <p>
-                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda molestias saepe quae exercitationem
-                                  pariatur totam similique quasi suscipit, eveniet corrupti perspiciatis omnis iste facere placeat voluptates
-                                   sunt officiis. Iste a aliquam magni debitis, nam cumque illum placeat dignissimos eius provident et 
-                                   tempora quas? Cumque aut vitae facilis nisi molestias.
-                              </p>
-                              <a href="#" class="mt-4 bg-white btn btn-lg px-5">Read</a>
-                           </div>
-                           <div class="col-md-6 my-auto">
-                              <img src="images/euraka.png" alt="" class="img-fluid rounded-2  ">
-                           </div>
-                           
+                  <!-- Slide 2 -->
+                  <div class="carousel-item">
+                  <div class="row bg-secondary p-5 flex-column-reverse flex-lg-row align-items-center text-center text-lg-start">
 
-                        </div>
-                      </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel"
-                     data-bs-slide="prev"><i class="fas fa-arrow-circle-left fa-3x text-secondary"></i>
-                  </button>
-               <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel"
-                  data-bs-slide="next"><i class="fas fa-arrow-circle-right fa-3x text-secondary"></i>
+                     <div class="col-lg-6">
+                        <h3 class="text-center pb-5">HACKMOS 2025: The largest hackmos hackathon is coming...</h3>
+                        <p class="text-white-50">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda molestias saepe quae exercitationem
+                        pariatur totam similique quasi suscipit, eveniet corrupti perspiciatis omnis iste facere placeat voluptates
+                        sunt officiis. Iste a aliquam magni debitis, nam cumque illum placeat dignissimos eius provident et
+                        tempora quas? Cumque aut vitae facilis nisi molestias.
+                        </p>
+                        <a href="#" class="mt-4 bg-white btn btn-lg px-5">Read ↗</a>
+                     </div>
+                     <div class="col-lg-6 my-auto">
+                        <img src="images/hackmos.jpg" alt="Eureka" class="img-fluid rounded-2">
+                     </div>
+                  </div>
+                  </div>
+
+                  <!-- Slide 3 -->
+                  <div class="carousel-item">
+                  
+                     <div class="row bg-secondary p-5 flex-column-reverse flex-lg-row align-items-center text-center text-lg-start">
+
+                     <div class="col-lg-6">
+                        <h3 class="text-center pb-5">Cosmos x RWAs: Why Tokenization projects choose Cosmos</h3>
+                        <p class="text-white-50">
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda molestias saepe quae exercitationem
+                        pariatur totam similique quasi suscipit, eveniet corrupti perspiciatis omnis iste facere placeat voluptates
+                        sunt officiis. Iste a aliquam magni debitis, nam cumque illum placeat dignissimos eius provident 
+                        </p>
+                        <a href="#" class="mt-4 bg-white btn btn-lg px-5">Read ↗</a>
+                     </div>
+                     <div class="col-lg-6 my-auto">
+                        <img src="images/rwa.png" alt="Eureka" class="img-fluid rounded-2">
+                     </div>
+                  </div>
+                  </div>
+
+                  <!-- Slide 4 -->
+                  <div class="carousel-item">
+                  <div class="row bg-secondary p-5 flex-column-reverse flex-lg-row align-items-center text-center text-lg-start">
+
+                     <div class="col-lg-6">
+                        <h3 class="text-center pb-5">The Dawn of Internet of Blockchain</h3>
+                        <p class="text-white-50">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil assumenda molestias saepe quae exercitationem
+                        pariatur totam similique quasi suscipit, eveniet corrupti perspiciatis omnis iste facere placeat voluptates
+                        sunt officiis. Iste a aliquam magni debitis, nam cumque illum placeat dignissimos eius provident et
+                        tempora quas? Cumque aut vitae facilis nisi molestias. 
+                        </p>
+                        <a href="#" class="mt-4 bg-white btn btn-lg px-5">Read ↗</a>
+                     </div>
+                     <div class="col-lg-6 my-auto">
+                        <img src="images/dawn.png" alt="Eureka" class="img-fluid rounded-2">
+                     </div>
+                  </div>
+                  </div>
+               </div>
+
+               <!-- Custom Prev/Next Buttons (INSIDE carousel now) -->
+               <button class="carousel-control-prev custom-control" type="button" data-bs-target="#news-carousel" data-bs-slide="prev">
+                  <i class="fas fa-arrow-left fa-2x text-white"></i>
+               </button>
+               <button class="carousel-control-next custom-control" type="button" data-bs-target="#news-carousel" data-bs-slide="next">
+                  <i class="fas fa-arrow-right fa-2x text-white"></i>
                </button>
 
+               <!-- Carousel Indicators (INSIDE carousel now) -->
+               <div class="carousel-indicators mb-3">
+                  <button type="button" data-bs-target="#news-carousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                  <button type="button" data-bs-target="#news-carousel" data-bs-slide-to="1"></button>
+                  <button type="button" data-bs-target="#news-carousel" data-bs-slide-to="2"></button>
+                  <button type="button" data-bs-target="#news-carousel" data-bs-slide-to="3"></button>
+               </div>
             </div>
+
+            <!-- Read More Button -->
             <div class="mt-5">
-               <a href="#" class="btn text-white fw-bold fs-3"> Read more interchains news</a>
+               <a href="#" class="btn text-white fw-bold fs-3">Read more interchains news <i class="fas fa-arrow-right"></i></a>
             </div>
-               
             </section>
+
+
+
+<!--  -->
+
+
+
 
             <!-- building -->
              <section class="pb-6 position-relative">
@@ -562,111 +644,117 @@
                         <p>Unsubscribe at any time. Privacy policy↗</p>
                      </div>
                      <div class="col-md-6 input group" >
-                        <input type="text" class="form-control form-control-lg text-white bg-secondary " placeholder="Your email" >
+                        <input type="email" class="form-control form-control-lg text-white bg-secondary " placeholder="Your email" >
                      </div>
                   </div>
                </div>
              </section>
 
 
-             <footer class="bg-black text-white py-5">
-               
-  <div class="container">
-    <div class="row row-cols-2 row-cols-md-4 g-4">
-      <hr class="w-100 mx-auto">
-      <!-- Column 1 -->
-      <div class="col">
-        <h6 class="fw-bold mb-3">Products & Solutions</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Cosmos SDK</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">CometBFT</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">IBC Protocol</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">CosmWasm</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">IBC Eureka</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Interchain Security</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 2 -->
-      <div class="col">
-        <h6 class="fw-bold mb-3">Developers</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Tutorials ↗</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Developer Academy ↗</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Builders Program</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">FAQ</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">IBC Protocol Docs ↗</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Cosmos SDK Docs ↗</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">CometBFT Docs ↗</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">CosmWasm Docs ↗</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">IBC Eureka Docs ↗</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 3 -->
-      <div class="col">
-        <h6 class="fw-bold mb-3">Ecosystem</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Wallets</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Validators</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Case Studies</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Whitepaper</a></li>
-        </ul>
-      </div>
-
-      <!-- Column 4 -->
-      <div class="col">
-        <h6 class="fw-bold mb-3">Resources</h6>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">About</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Contact</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Press Kit</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Blog ↗</a></li>
-          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Discord ↗</a></li>
-        </ul>
-      </div>
-      
-    </div>
-  </div>
-</footer>
-
-
-
-             <!-- footer -->
-              <footer class="">
-                  <div class="container">
-                     <div class="row">
-                        <hr class="w-100 mx-auto">
-                        <div class="col-md-5 offset-md-1">
-                           <img src="images/osmosis_logo.svg" alt="">  
-                           <p>| Privacy | Trademark</p>
-                        </div>
-                        <div class="col-md-4 mx-auto pt-4">
-                           <img src="images/smlogo.svg" alt="" class="bg-white mx-3">
-                           <img src="images/smlogo1.svg" alt="" class="bg-white">
-                           <img src="images/smlogo2.svg" alt="" class="bg-white mx-3">
-                           <img src="images/twitter.svg" alt="" class="bg-white">
-                           <img src="images/youtube.svg" alt="" class="bg-white mx-3">
-                           <img src="images/twitter.svg" alt="" class="bg-white">
-                        </div>
-
-                        <div class="col-md-10 offset-md-1 text-light">
-                           <p class="mt-4 mb-3">Cosmos is a registered trademark of the Interchain Foundation.</p>
-                           <p class="mb-6">This website is maintained by the Interchain Foundation (ICF) on behalf of the decentralized community. The contents 
-                              and opinions of this website do not necessarily reflect those of the ICF. This website links to projects, dApps and 
-                              cryptocurrency exchanges as a service to the public. The ICF does not warrant that the information provided by these 
-                              websites is correct, complete, and up-to-date. The ICF is not responsible for the content of those websites and 
-                              expressly rejects any liability for damages of any kind resulting from the use, reference to, or reliance on any 
-                              information contained within these websites. If you spot an error or issue on this website, please email marketing-
-                              [at]-interchain.io
-                           </p>
-                        </div>
-
-                     </div>
-
-                     
+            <footer class="bg-black text-white pt-5 mb-6">
+            <div class="container">
+               <!-- Top Footer: Links -->
+               <div class="row row-cols-2 row-cols-md-4 g-4">
+                  <!-- Column 1 -->
+                  <div class="col">
+                  <h6 class="fw-bold mb-3">Products & Solutions</h6>
+                  <ul class="list-unstyled">
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Cosmos SDK</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">CometBFT</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">IBC Protocol</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">CosmWasm</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">IBC Eureka</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Interchain Security</a></li>
+                  </ul>
                   </div>
-              </footer>
+
+                  <!-- Column 2 -->
+                  <div class="col">
+                  <h6 class="fw-bold mb-3">Developers</h6>
+                  <ul class="list-unstyled">
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Tutorials ↗</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Developer Academy ↗</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Builders Program</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">FAQ</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">IBC Protocol Docs ↗</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Cosmos SDK Docs ↗</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">CometBFT Docs ↗</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">CosmWasm Docs ↗</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">IBC Eureka Docs ↗</a></li>
+                  </ul>
+                  </div>
+
+                  <!-- Column 3 -->
+                  <div class="col">
+                  <h6 class="fw-bold mb-3">Ecosystem</h6>
+                  <ul class="list-unstyled">
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Wallets</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Validators</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Case Studies</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Whitepaper</a></li>
+                  </ul>
+                  </div>
+
+                  <!-- Column 4 -->
+                  <div class="col">
+                  <h6 class="fw-bold mb-3">Resources</h6>
+                  <ul class="list-unstyled">
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">About</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Contact</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Press Kit</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Blog ↗</a></li>
+                     <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Discord ↗</a></li>
+                  </ul>
+                  </div>
+               </div>
+
+               <!-- Divider -->
+               <hr class="w-100 my-4 text-white-50">
+
+               <!-- Branding and Social Icons with Popovers -->
+               <div class="row align-items-center">
+               <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                  <img src="images/osmosis_logo.svg" alt="Logo" class="mb-2" style="max-width: 150px;">
+                  <p class="mb-0 text-white-50">| Privacy | Trademark</p>
+               </div>
+               <div class="col-md-6 text-center text-md-end">
+                  <a href="#" class="text-white mx-2" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Discord" data-bs-trigger="hover">
+                     <i class="fab fa-discord fa-lg"></i>
+                  </a>
+                  <a href="#" class="text-white mx-2" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Telegram" data-bs-trigger="hover">
+                     <i class="fab fa-telegram fa-lg"></i>
+                  </a>
+                  <a href="#" class="text-white mx-2" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="GitHub" data-bs-trigger="hover" >
+                     <i class="fab fa-github fa-lg"></i>
+                  </a>
+                  <a href="#" class="text-white mx-2" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Twitter" data-bs-trigger="hover">
+                     <i class="fab fa-twitter fa-lg"></i>
+                  </a>
+                  <a href="#" class="text-white mx-2" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="YouTube" data-bs-trigger="hover" >
+                     <i class="fab fa-youtube fa-lg"></i>
+                  </a>
+               </div>
+               </div>
+
+
+               <!-- Disclaimer -->
+               <div class="row mt-4">
+                  <div class="col text-white-50 small">
+                  <p>Cosmos is a registered trademark of the Interchain Foundation.</p>
+                  <p>
+                     This website is maintained by the Interchain Foundation (ICF) on behalf of the decentralized community. The contents 
+                     and opinions of this website do not necessarily reflect those of the ICF. This website links to projects, dApps and 
+                     cryptocurrency exchanges as a service to the public. The ICF does not warrant that the information provided by these 
+                     websites is correct, complete, and up-to-date. The ICF is not responsible for the content of those websites and 
+                     expressly rejects any liability for damages of any kind resulting from the use, reference to, or reliance on any 
+                     information contained within these websites. If you spot an error or issue on this website, please email marketing-
+                     [at]-interchain.io.
+                  </p>
+                  </div>
+               </div>
+            </div>
+            </footer>
+
 
        <script src="js/script.js"></script>
      <script src="js/bootstrap.bundle.min.js"></script>

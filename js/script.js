@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
    new bootstrap.Tooltip(tooltipTriggerEl);
    });
 
-   let popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
-   let popoverList = [...popoverTriggerList].map((popoverEl) => new bootstrap.Popover(popoverEl));
+  
 
    const productTrigger = new bootstrap.Popover(document.querySelector('#products'), {
       content: `
@@ -121,18 +120,22 @@ document.addEventListener('DOMContentLoaded', function () {
    trigger: 'hover'
    });
 
+
+    let popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+   let popoverList = [...popoverTriggerList].map((popoverEl) => new bootstrap.Popover(popoverEl));
+
    
-   // const contactTrigger = new bootstrap.Popover(document.querySelector('#contact'), {
-   //    content: `
-   //    <div class="">
-   //       <h6 class="text-uppercase mb-2 text-mute">Contact</h6>
-   //       <p>Contact Forum </p>
-   //       <p><small">Contact an Interchain expert</small></p>
-   //    </div>
-   // `,
-   // html: true,
-   // trigger: 'hover'
-   // });
+   const contactTrigger = new bootstrap.Popover(document.querySelector('#contact'), {
+      content: `
+      <div class="m-3">
+         <h6 class="text-uppercase mb-2 text-white-50">Contact</h6>
+         <p>Contact Forum </p>
+         <p class="text-white-50">Contact an Interchain expert</p>
+      </div>
+   `,
+   html: true,
+   trigger: 'hover'
+   });
 
 
    // 
