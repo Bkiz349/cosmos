@@ -15,11 +15,11 @@
      <header class="header overflow-hidden position-relative ">
       <img class="decoration-star position-absolute " src="images/header_backgroung_R.png" alt="">
       <img class="decoration-star position-absolute " src="images/header_background_2.svg" alt="">
-      <img class="binance position-absolute sth" src="images/Binance.svg" alt="" title="binance" data-bs-toggle="tooltip">
-      <img class="crypto position-absolute sth" src="images/crypto.svg" alt="" title="crypto" data-bs-toggle="tooltip">
-      <img class="ethereum position-absolute sth" src="images/ethereum.svg" alt="" title="ethereum" data-bs-toggle="tooltip">
-      <img class="osmosis position-absolute sth" src="images/osmosis.svg" alt="" title="osmosis" data-bs-toggle="tooltip">
-      <img class="thorchain position-absolute sth" src="images/ThorChain.svg" alt="" title="thorchaic" data-bs-toggle="tooltip">
+      <img class="binance position-absolute sth" src="images/Binance.svg" alt="" data-bs-title="binance" data-bs-toggle="tooltip">
+      <img class="crypto position-absolute sth" src="images/crypto.svg" alt="" data-bs-title="crypto" data-bs-toggle="tooltip">
+      <img class="ethereum position-absolute sth" src="images/ethereum.svg" alt="" data-bs-title="ethereum" data-bs-toggle="tooltip">
+      <img class="osmosis position-absolute sth" src="images/osmosis.svg" alt="" data-bs-title="osmosis" data-bs-toggle="tooltip">
+      <img class="thorchain position-absolute sth" src="images/ThorChain.svg" alt="" data-bs-title="thorchaic" data-bs-toggle="tooltip">
       <div class="container position-relative z-3">
          <!-- Navigation -->
      <nav class="navbar navbar-expand-lg navbar-dark">
@@ -34,16 +34,17 @@
            <div class="collapse navbar-collapse" id="navmenu">
                <ul class="navbar-nav mx-auto">
                   <li class="nav-item fs-5">
-                     <a href="#products" class="nav-link">Products</a>
+                     <p href="#products" class="nav-link" id="products">Products</p>
                   </li>
                   <li class="nav-item fs-5">
-                     <a href="#developers" class="nav-link">Developers</a>
+                     <p href="#developers" class="nav-link" id='developers'>Developers</p>
                   </li>
                   <li class="nav-item fs-5">
-                     <a href="#resources" class="nav-link">Resources</a>
+                     <p href="#resources" class="nav-link" id="resources">Resources</p>
                   </li>
                   <li class="nav-item fs-5">
-                     <a href="#contact" class="nav-link">Contact</a>
+                     <p href="#contact" class="nav-link" id="contact" data-bs-toggle="popover"
+                     data-bs-content="Contact an Interchain Expert" data-bs-title="CONTACT">Contact </p>
                   </li>
                </ul>
            </div>
@@ -64,7 +65,7 @@
                      <a href="#" class="btn bg-white btn-lg">Learn from Our Expert  <i class="fas fa-arrow-right fa-white"></i></a>               
                   </div>
                   <div class="col-md-6">
-                     <a href="#" class="btn text-white btn-lg">Start building</a>                  
+                     <a href="#" class="btn text-white btn-lg">Start building <i class="fas fa-arrow-right"></i></a>                  
                   </div>
             </div>
             
@@ -112,7 +113,7 @@
             <img src="images/blockchain_img.svg" alt="" width="2000px" height="1000px" class="blockchain_img position-absolute">
             <div class="row"> 
                <div class="col-lg-5 offset-lg-1 pb-6">
-                  <h1 class="display-5 fw-bold pb-3">Blockchains that scale </h1>
+                  <h1 class="display-1 fw-bold pb-3">Blockchains that scale </h1>
                   <div class="row">
                      <div class="col"><p>NEAR-ZERO-FEES</p></div>
                      <div class="col"><p>Transaction rate as low as</p></div>
@@ -125,7 +126,7 @@
                      Build an appchain that scales at a fraction of the cost of platform chains, while inheriting the built-in security 
                      of appchain architecture assured by the Cosmos Hub.
                   </p>
-                  <a href="#" class="btn bg-white btn-lg">Learn more about appchains</a>
+                  <a href="#" class="btn bg-white btn-lg">Learn more about appchains <i class="fas fa-arrow-right"></i></a>
                </div>
             </div>
          </div>
@@ -139,8 +140,8 @@
          <img src="images/section.svg" alt="" class="sdk_background_3 position-absolute d-none d-lg-block">
          <img src="images/section.svg" alt="" class="sdk_background_4 position-absolute d-none d-lg-block">
          <img src="images/section.svg" alt="" class="sdk_background_5 position-absolute d-none d-lg-block">
-         <div class="container position-relative z-100 py-8">
-            <div class="row pb-8">
+         <div class="container position-relative z-5000 py-8">
+            <div class="row pb-6">
                <div class="col-md-4 offset-md-1">
                   <div class="d-flex flex-row justify-content-center align-items-start gap-4 border-bottom py-2">
                      <div class="my-auto">
@@ -198,21 +199,21 @@
             </div>
             <!-- row -->
              <div class="row">
-               <div class="col-md-4 offset-md-1 pb-6">
+               <div class="col-md-4 offset-md-1 pb-3">
                   <i class="fas fa-plus"></i>
-                  <p class="fs-3"><strong>Build with full sovereignty </strong> from choice of validators to customizing your runtime.</p>
+                  <p class="fs-5"><strong>Build with full sovereignty </strong> from choice of validators to customizing your runtime.</p>
                </div>
-               <div class="col-md-4 offset-md-1 pb-6">
+               <div class="col-md-4 offset-md-1 pb-3">
                   <i class="fas fa-plus"></i>
-                  <p class="fs-3"><strong>Build with full sovereignty </strong> from choice of validators to customizing your runtime.</p>
+                  <p class="fs-5"><strong>Build with full sovereignty </strong> from choice of validators to customizing your runtime.</p>
                </div>
-                <div class="col-md-4 offset-md-1 pb-6">
+                <div class="col-md-4 offset-md-1 pb-5">
                   <i class="fas fa-plus"></i>
-                  <p class="fs-3"><strong>Build with full sovereignty </strong> from choice of validators to customizing your runtime.</p>
+                  <p class="fs-5"><strong>Build with full sovereignty </strong> from choice of validators to customizing your runtime.</p>
                </div>
-               <div class="col-md-4 offset-md-1 pb-6">
+               <div class="col-md-4 offset-md-1 pb-5">
                   <i class="fas fa-plus"></i>
-                  <p class="fs-3"><strong>Build with full sovereignty </strong> from choice of validators to customizing your runtime.</p>
+                  <p class="fs-5"><strong>Build with full sovereignty </strong> from choice of validators to customizing your runtime.</p>
                </div>
              </div>
          </div>
@@ -220,7 +221,7 @@
 
       <!-- smart contracts -->
      <section class="position-relative">
-         <div class="smart container m-6 ">
+         <div class="smart container mx-6 ">
             
             <div class="row"> 
                <div class="col-lg-6">
@@ -228,33 +229,33 @@
                   <img src="images/header_background.svg" alt="" width="1000px" class="smart_contract_1 position-absolute img-fluid  d-none d-lg-block">
                </div>
                <div class="col-lg-6 pb-6 col-md-6">
-                  <h1 class="display-5 fw-bold pb-3">Smart contracts done smarter </h1>
+                  <h1 class="display-2 fw-bold pb-3">Smart contracts done smarter </h1>
                
-                  <p class="py-4">
+                  <p class="py-4 fs-3">
                     The simplicity of smart contracts meets the power of the interchain stack. Create powerful economic primitives 
                     that aggregate functionality across multiple ecosystems. Neutron is the secure, simple, and cross-chain integrated 
                     smart contract platform you need to bring your interchain application to market.
                   </p>
                   <div class="row">
                      <div class="col">
-                        <a href="#" class="btn bg-white btn-lg">Neutrons</a>
+                        <a href="#" class="btn bg-white btn-lg">Neutrons <i class="fas fa-arrow-right"></i></a>
                      </div>
                      <div class="col">
-                        <a href="#" class="btn text-white btn-lg">CosmWasm</a>
+                        <a href="#" class="btn text-white btn-lg">CosmWasm <i class="fas fa-arrow-right"></i></a>
                      </div>
                   </div>
                   
-                  <div class=" py-6">
-                     <img src="images/plus icon.svg" alt="" class="text-white">
-                     <p class="fs-3"><strong>Build with full sovereignty </strong> from choice of validators to customizing your runtime.</p>
+                  <div class=" pt-6">
+                     <i class="fas fa-plus"></i>
+                     <p class="fs-5"><strong>Build with full sovereignty </strong> from choice of validators to customizing your runtime.</p>
                   </div>
-                  <div class=" pb-6">
-                     <img src="images/plus icon.svg" alt="">
-                     <p class="fs-3"><strong>Build with full sovereignty </strong> from choice of validators to customizing your runtime.</p>
+                  <div class=" py-4">
+                     <i class="fas fa-plus"></i>
+                     <p class="fs-5"><strong>Build with full sovereignty </strong> from choice of validators to customizing your runtime.</p>
                   </div>
-                  <div class=" pb-6">
-                     <img src="images/plus icon.svg" alt="">
-                     <p class="fs-3"><strong>Build with full sovereignty </strong> from choice of validators to customizing your runtime.</p>
+                  <div class=" pb-4">
+                     <i class="fas fa-plus"></i>
+                     <p class="fs-5"><strong>Build with full sovereignty </strong> from choice of validators to customizing your runtime.</p>
                   </div>
                   
                </div>
@@ -280,7 +281,7 @@
                   <!-- <img src="images/dols.svg" alt="" class="ibc_img img-fluid"> -->
                   <p> <span class="xl-text">$96B+ </span> USD</p> 
                   <p class="md-3">Total IBC-connected economy</p>
-                  <a href="#" class="btn text-white fw-bold p-0">Explore Token</a>
+                  <a href="#" class="btn text-white fw-bold p-0">Explore Token <i class="fas fa-arrow-right"></i></a>
                </div>
             </div>
          </div>
@@ -289,47 +290,60 @@
       <!-- cards -->
        <section class="my-3 pb-7">
          <div class="container">
-            <div class="row">
+            <div class="row g-4">
+               <!-- Card 1 -->
                <div class="col-md-4">
-                  <div class="card bg-secondary text-white border-0 rounded-5 p-3" style="height: 22rem;">
-                     <div class="card-body">
-                        <h3 class="card-title pb-3">Interchain Security</h3>
-                        <div class="card-text">Leverage the most secure network in the interchain to launch your business. 
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        </div>
-                      
-                        <a href="#" class="btn btn-white pt-7 text-white p-0">Learn More</a>
-                        
-                        
+               <div class="card bg-secondary text-white border-0 rounded-5 p-3 h-100">
+                  <div class="card-body d-flex flex-column h-100">
+                     <h3 class="card-title pb-3">Interchain Security</h3>
+                     <div class="card-text flex-grow-1 mb-4">
+                     Leverage the most secure network in the interchain to launch your business. 
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     </div>
+                     <div class="mt-auto pt-4">
+                     <a href="#" class="btn btn-white text-white p-0">Learn More <i class="fas fa-arrow-right"></i></a>
                      </div>
                   </div>
                </div>
+               </div>
+
+               <!-- Card 2 -->
                <div class="col-md-4">
-                  <div class="card bg-secondary text-white border-0 rounded-5 p-3" style="height: 22rem;">
-                     <div class="card-body">
-                        <h3 class="card-title pb-3">Interchain Account</h3>
-                        <div class="card-text">Leverage the most secure network in the interchain to launch your business.
-                           Manage Lorem, ipsum dolor sit amet consectetur adipisicing elit. At quibusdam sapiente similique 
-                           neque consequuntur ipsum quas beatae esse quis ea?
-                        </div>
-                        <a href="#" class="btn btn-white pt-5 p-0 text-white">Learn More</a>
+               <div class="card bg-secondary text-white border-0 rounded-5 p-3 h-100">
+                  <div class="card-body d-flex flex-column h-100">
+                     <h3 class="card-title pb-3">Interchain Account</h3>
+                     <div class="card-text flex-grow-1 mb-4">
+                     Leverage the most secure network in the interchain to launch your business.
+                     Manage Lorem, ipsum dolor sit amet consectetur adipisicing elit. At quibusdam sapiente similique 
+                     neque consequuntur ipsum quas beatae esse quis ea?
+                     </div>
+                     <div class="mt-auto pt-4">
+                     <a href="#" class="btn btn-white text-white p-0">Learn More <i class="fas fa-arrow-right"></i></a>
                      </div>
                   </div>
                </div>
+               </div>
+
+               <!-- Card 3 -->
                <div class="col-md-4">
-                  <div class="card bg-secondary text-white border-0 rounded-5 p-3" style="height: 22rem;">
-                     <div class="card-body">
-                        <h3 class="card-title">IBC Protocol</h3>
-                        <div class="card-text">Leverage the most secure network in the interchain to launch your business
-                           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repudiandae quam temporibus nostrum, commodi dolor.
-                        </div>
-                        <a href="#" class="btn btn-white pt-6 p-0 text-white">Learn More</a>
+               <div class="card bg-secondary text-white border-0 rounded-5 p-3 h-100">
+                  <div class="card-body d-flex flex-column h-100">
+                     <h3 class="card-title pb-3">IBC Protocol</h3>
+                     <div class="card-text flex-grow-1 mb-4">
+                     Leverage the most secure network in the interchain to launch your business.
+                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis repudiandae quam temporibus nostrum, commodi dolor.
+                     </div>
+                     <div class="mt-auto pt-4">
+                     <a href="#" class="btn btn-white text-white p-0">Learn More <i class="fas fa-arrow-right"></i></a>
                      </div>
                   </div>
+               </div>
                </div>
             </div>
          </div>
-       </section>
+      </section>
+
+
 
        <!-- stack -->
         <section class="position-relative pb-8">
@@ -371,11 +385,9 @@
                   </div>
                   <div class="col-md-5 offset-md-1">
                      <div class="d-flex flex-row justify-content-center align-items-start gap-4 py-2">
-                        <div class="bg-white">
-                           <img src="images/smlogo1.svg" alt="" with="30px">
-                        </div>
+                        <i class="fab fa-telegram fa-2x"></i>
                         <div>
-                           <h3 class="fw-old">Community chat</h3>
+                           <h3 class="fw-bold">Community chat </h3>
                            <p class="fs3">Chat with worldwide community on Telegram</p>
                         </div>
                      </div>
@@ -383,11 +395,9 @@
                   </div>
                   <div class="col-md-5 offset-md-1">
                      <div class="d-flex flex-row justify-content-center align-items-start gap-4 py-2">
-                        <div class="bg-white">
-                           <img src="images/smlogo1.svg" alt="" widh="70px">
-                        </div>
+                        <i class="fab fa-twitter fa-2x"></i>
                         <div>
-                           <h3 class="fw-bld">Community chat</h3>
+                           <h3 class="fw-bld">Twitter </h3>
                            <p class="fs3">Chat with worldwide community on Telegram</p>
                         </div>
                      </div>
@@ -395,11 +405,9 @@
                   </div>
                   <div class="col-md-5 offset-md-1">
                      <div class="d-flex flex-row justify-content-center align-items-start gap-4 py-2">
-                        <div class="bg-white">
-                           <img src="images/smlogo1.svg" alt="" with="70px">
-                        </div>
+                        <i class="fab fa-github fa-2x"></i>
                         <div>
-                           <h3 class="fw-old">Community chat</h3>
+                           <h3 class="fw-old">Developer Chat</h3>
                            <p class="fs3">Chat with worldwide community on Telegram</p>
                         </div>
                      </div>
@@ -407,11 +415,9 @@
                   </div>
                   <div class="col-md-5 offset-md-1">
                      <div class="d-flex flex-row justify-content-center align-items-start gap-4 py-2">
-                        <div class="bg-white">
-                           <img src="images/smlogo1.svg" alt="" widh="70px">
-                        </div>
+                        <i class="fas fa-cloud fa-2x"></i>
                         <div>
-                           <h3 class="fw-bld">Community chat</h3>
+                           <h3 class="fw-bld">Cosmos Forum</h3>
                            <p class="f-3">Chat with worldwide community on Telegram</p>
                         </div>
                      </div>
@@ -437,7 +443,7 @@
                                    sunt officiis. Iste a aliquam magni debitis, nam cumque illum placeat dignissimos eius provident et 
                                    tempora quas? Cumque aut vitae facilis nisi molestias.
                               </p>
-                              <a href="#" class="mt-4 bg-white btn btn-lg px-5">Read</a>
+                              <a href="#" class="mt-4 bg-white btn btn-lg px-5">Read  <i class="fas fa-arrow-right"></i></a>
                            </div>
                            <div class="col-lg-6 my-auto">
                               <img src="images/euraka.png" alt="" class="img-fluid rounded-2  ">
@@ -502,43 +508,50 @@
 
             <!-- building -->
              <section class="pb-6 position-relative">
-               <img src="images/building_background.png" alt="" class="position-absolute building_background  d-none d-lg-block" width="1500px">
-               <div class="container pt-8 z-10">
-                  <div class="row">
-                     <h1 class="display-3 fw-bold">Start building on the interchain</h1>
-                     <div class="col-md-4 mt-5">
-                        <div class="card rounded-5 bg-secondary text-white" style="height: 33rem;">
-                           <div class="card-body ">
-                              <img src="images/connect.svg" alt="" class="img-fluid">
-                              <p>CONNECT</p>
-                              <h1 class="pb-4">Connect via IBC</h1>
-                              <p>Grow the economy and interoperability of your chain with the IBC protocol</p>
-                           </div>
+            <img src="images/building_background.png" alt="" class="position-absolute building_background d-none d-lg-block" width="1500px">
+            <div class="container pt-8 z-10">
+               <div class="row">
+                  <h1 class="display-3 fw-bold">Start building on the interchain</h1>
+
+                  <!-- Card 1 -->
+                  <div class="col-md-4 mt-5 d-flex">
+                     <div class="card rounded-5 bg-secondary text-white w-100" style="height: 100%;">
+                        <div class="card-body">
+                           <img src="images/connect.svg" alt="" class="img-fluid mb-3">
+                           <p class="text-uppercase fw-semibold opacity-75">Connect</p>
+                           <h2 class="fw-bold mb-3">Connect via IBC</h2>
+                           <p>Grow the economy and interoperability of your chain with the IBC protocol.</p>
                         </div>
                      </div>
-                     <div class="col-md-4 mt-5">
-                        <div class="card  bg-secondary text-white" style="height: 32rem;">
-                           <div class="card-body " >
-                              <img src="images/validate.svg" alt="" class="validate" width="300px" >
-                              <p>VALIDATE</p>
-                              <h1 class="pb-4">Connect via IBC</h1>
-                              <p>Grow the economy and interoperability of your chain with the IBC protocol</p>
-                           </div>
+                  </div>
+
+                  <!-- Card 2 -->
+                  <div class="col-md-4 mt-5 d-flex">
+                     <div class="card rounded-5 bg-secondary text-white w-100" style="height: 100%;">
+                        <div class="card-body">
+                           <img src="images/validate.svg" alt="" class="img-fluid mb-3">
+                           <p class="text-uppercase fw-semibold opacity-75">Validate</p>
+                           <h2 class="fw-bold mb-3">Become a validator</h2>
+                           <p>Join a group of trusted decentralized validators to help secure the interchain.</p>
                         </div>
                      </div>
-                     <div class="col-md-4 mt-5">
-                        <div class="card  bg-secondary text-white " style="height: 32rem;">
-                           <div class="card-body ">
-                              <img src="images/build.svg" alt="" class="img-fluid">
-                              <p>APPCHAINS</p>
-                              <h1 class="pb-4">Connect via IBC</h1>
-                              <p>Grow the economy and interoperability of your chain with the IBC protocol</p>
-                           </div>
+                  </div>
+
+                  <!-- Card 3 -->
+                  <div class="col-md-4 mt-5 d-flex">
+                     <div class="card rounded-5 bg-secondary text-white w-100" style="height: 100%;">
+                        <div class="card-body">
+                           <img src="images/build.svg" alt="" class="img-fluid mb-3">
+                           <p class="text-uppercase fw-semibold opacity-75">Appchains</p>
+                           <h2 class="fw-bold mb-3">Build an appchain</h2>
+                           <p>Bring services to the interchain with out-of-the-box appchain technology and best-in-class security.</p>
                         </div>
                      </div>
                   </div>
                </div>
-             </section>
+            </div>
+         </section>
+
 
              <!-- email -->
              <section class="my-6">
@@ -549,11 +562,74 @@
                         <p>Unsubscribe at any time. Privacy policy↗</p>
                      </div>
                      <div class="col-md-6 input group" >
-                        <input type="text" class="form-control text-white bg-secondary " placeholder="Your email" >
+                        <input type="text" class="form-control form-control-lg text-white bg-secondary " placeholder="Your email" >
                      </div>
                   </div>
                </div>
              </section>
+
+
+             <footer class="bg-black text-white py-5">
+               
+  <div class="container">
+    <div class="row row-cols-2 row-cols-md-4 g-4">
+      <hr class="w-100 mx-auto">
+      <!-- Column 1 -->
+      <div class="col">
+        <h6 class="fw-bold mb-3">Products & Solutions</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Cosmos SDK</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">CometBFT</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">IBC Protocol</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">CosmWasm</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">IBC Eureka</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Interchain Security</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="col">
+        <h6 class="fw-bold mb-3">Developers</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Tutorials ↗</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Developer Academy ↗</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Builders Program</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">FAQ</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">IBC Protocol Docs ↗</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Cosmos SDK Docs ↗</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">CometBFT Docs ↗</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">CosmWasm Docs ↗</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">IBC Eureka Docs ↗</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3 -->
+      <div class="col">
+        <h6 class="fw-bold mb-3">Ecosystem</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Wallets</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Validators</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Case Studies</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Whitepaper</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="col">
+        <h6 class="fw-bold mb-3">Resources</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">About</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Contact</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Press Kit</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Blog ↗</a></li>
+          <li><a href="#" class="text-white-50 text-decoration-none d-block py-1">Discord ↗</a></li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+
 
 
              <!-- footer -->

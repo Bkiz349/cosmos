@@ -1,8 +1,15 @@
 $dark: black;
-$secondary: #1a1818;
+$secondary: #222222;
 
 $navbar-light-color: white !important;
 
+$popover-bg: $secondary !important;
+$popover-body-color: white !important;
+$popover-max-width: 720px !important;
+$popover-border-radius: 20px !important;
+
+
+$btn-padding-y-lg: 1.2rem !important;
 
 $spacer: 1rem !default;
 $spacers: (
@@ -17,5 +24,7 @@ $spacers: (
    8: $spacer * 12,
    9: $spacer * 15,
    ) !default;
+
+
 
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
